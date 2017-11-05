@@ -3,7 +3,7 @@
 iOS 개발 : 조준영(인천대학교 컴퓨터공학과), 김민수(인천대학교 수학과), 김선일(인천대학교 정보통신공학과)
 https://itunes.apple.com/kr/app/smartcampusinu/id1123199010?mt=8
 
-###주요 기능(괄호 안의 내용은 각 기능 개발자)
+## 주요 기능(괄호 안의 내용은 각 기능 개발자)
 
 1. 학교 공지사항()
 
@@ -37,7 +37,7 @@ https://itunes.apple.com/kr/app/smartcampusinu/id1123199010?mt=8
 
 학생 커뮤니티 제공.
 
-###사용한 라이브러리
+## 사용한 라이브러리
 
 1. Alamofire
 
