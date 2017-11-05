@@ -5,7 +5,7 @@ https://itunes.apple.com/kr/app/smartcampusinu/id1123199010?mt=8
 
 ## 주요 기능(괄호 안의 내용은 각 기능 개발자)
 
-1. 학교 공지사항()
+1. 학교 공지사항(조준영)
 
 학교 공지사항을 모아서 보여줌.
 
