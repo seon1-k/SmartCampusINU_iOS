@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NoticeViewCell" customModule="SmartCampus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-e2-AkH">
+                        <rect key="frame" x="20" y="5" width="389" height="16"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-zR-1gM">
+                        <rect key="frame" x="20" y="34" width="20.5" height="11"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIH-2B-HJ7">
+                        <rect key="frame" x="60.5" y="34" width="20.5" height="11"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gg3-e2-AkH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="2J2-9G-b94"/>
+                <constraint firstAttribute="bottom" secondItem="QIH-2B-HJ7" secondAttribute="bottom" constant="5" id="CVQ-ZW-fAN"/>
+                <constraint firstItem="gg3-e2-AkH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Kxz-WM-RAC"/>
+                <constraint firstItem="fdQ-zR-1gM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="OmP-GH-tFB"/>
+                <constraint firstAttribute="bottom" secondItem="fdQ-zR-1gM" secondAttribute="bottom" constant="5" id="axz-Sd-kLq"/>
+                <constraint firstAttribute="trailing" secondItem="gg3-e2-AkH" secondAttribute="trailing" constant="5" id="eKI-S0-XJA"/>
+                <constraint firstItem="QIH-2B-HJ7" firstAttribute="leading" secondItem="fdQ-zR-1gM" secondAttribute="trailing" constant="20" id="txO-6b-uLm"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="QIH-2B-HJ7" id="tTv-3T-tG8"/>
+                <outlet property="titleLabel" destination="gg3-e2-AkH" id="9Oj-8F-sxB"/>
+                <outlet property="writerLabel" destination="fdQ-zR-1gM" id="SdD-HO-5H3"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

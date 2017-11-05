@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationDrawer" customModule="SmartCampus" customModuleProvider="target">
+            <connections>
+                <outlet property="appInfoButton" destination="fgW-wU-Eqy" id="gZ7-Bs-bod"/>
+                <outlet property="applyLinkButton" destination="Est-Im-HZI" id="YWQ-n6-nbs"/>
+                <outlet property="dormLinkButton" destination="DiK-em-zXc" id="edI-Bs-akT"/>
+                <outlet property="inuLinkButton" destination="X6V-C5-b9d" id="mJk-qK-KcG"/>
+                <outlet property="libLinkButton" destination="6bZ-FU-SN6" id="7nV-It-agH"/>
+                <outlet property="logoutButton" destination="VMd-vn-NPj" id="66u-QI-MVJ"/>
+                <outlet property="majorLabel" destination="vwj-dh-pBQ" id="4q8-iV-WKh"/>
+                <outlet property="nameLabel" destination="qNB-dK-RUL" id="AFO-ux-8Ll"/>
+                <outlet property="profileImage" destination="Ioe-MZ-qOh" id="Jfk-1z-Gr3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-C5-b9d">
+                    <rect key="frame" x="141" y="290" width="93" height="33"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <state key="normal" title="● 인천대학교">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openInuWeb:" destination="-1" eventType="touchUpInside" id="V48-8h-kBr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bZ-FU-SN6">
+                    <rect key="frame" x="141" y="343" width="64" height="33"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <state key="normal" title="● 도서관">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openInuLib:" destination="-1" eventType="touchUpInside" id="lDv-lM-bRf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiK-em-zXc">
+                    <rect key="frame" x="141" y="396" width="64" height="33"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <state key="normal" title="● 생활관">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openInuDorm:" destination="-1" eventType="touchUpInside" id="U2b-DT-lce"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Est-Im-HZI">
+                    <rect key="frame" x="141" y="449" width="78" height="33"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <state key="normal" title="● 수강신청">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openInuApply:" destination="-1" eventType="touchUpInside" id="Bnr-Ys-CJG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgW-wU-Eqy">
+                    <rect key="frame" x="210" y="587" width="55" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QQd-Jc-fiW"/>
+                        <constraint firstAttribute="width" constant="55" id="ixn-Fb-xxb"/>
+                    </constraints>
+                    <state key="normal" title="앱정보"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwj-dh-pBQ">
+                    <rect key="frame" x="167" y="130" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNB-dK-RUL">
+                    <rect key="frame" x="167" y="156" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ioe-MZ-qOh">
+                    <rect key="frame" x="157.5" y="55" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="gep-L1-JQ5"/>
+                        <constraint firstAttribute="width" constant="60" id="mat-vx-mTJ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMd-vn-NPj">
+                    <rect key="frame" x="71" y="587" width="72" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="fju-tu-wup"/>
+                        <constraint firstAttribute="height" constant="40" id="x6b-qW-KGW"/>
+                    </constraints>
+                    <state key="normal" title="로그아웃"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Est-Im-HZI" firstAttribute="top" secondItem="DiK-em-zXc" secondAttribute="bottom" constant="20" id="0bF-Yc-RIx"/>
+                <constraint firstItem="X6V-C5-b9d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="290" id="3RT-0U-kcT"/>
+                <constraint firstItem="X6V-C5-b9d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4gd-x2-wFb"/>
+                <constraint firstItem="VMd-vn-NPj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-60" id="CQj-M9-4fM"/>
+                <constraint firstItem="vwj-dh-pBQ" firstAttribute="top" secondItem="Ioe-MZ-qOh" secondAttribute="bottom" constant="20" id="CXG-Xn-cDi"/>
+                <constraint firstItem="Est-Im-HZI" firstAttribute="leading" secondItem="DiK-em-zXc" secondAttribute="leading" id="ItR-n5-Xzg"/>
+                <constraint firstItem="6bZ-FU-SN6" firstAttribute="leading" secondItem="X6V-C5-b9d" secondAttribute="leading" id="KwZ-Wp-KPN"/>
+                <constraint firstItem="Ioe-MZ-qOh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PLo-m5-OIx"/>
+                <constraint firstItem="DiK-em-zXc" firstAttribute="leading" secondItem="6bZ-FU-SN6" secondAttribute="leading" id="UQy-c8-rAq"/>
+                <constraint firstItem="6bZ-FU-SN6" firstAttribute="top" secondItem="X6V-C5-b9d" secondAttribute="bottom" constant="20" id="W3z-mL-seV"/>
+                <constraint firstItem="fgW-wU-Eqy" firstAttribute="centerY" secondItem="VMd-vn-NPj" secondAttribute="centerY" id="YBg-ww-zXq"/>
+                <constraint firstAttribute="bottom" secondItem="VMd-vn-NPj" secondAttribute="bottom" constant="40" id="Yma-03-8nK"/>
+                <constraint firstItem="vwj-dh-pBQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ghV-nX-Jca"/>
+                <constraint firstItem="qNB-dK-RUL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iIr-vl-Lzg"/>
+                <constraint firstItem="qNB-dK-RUL" firstAttribute="top" secondItem="vwj-dh-pBQ" secondAttribute="bottom" constant="8" id="nUi-T7-3Ez"/>
+                <constraint firstItem="fgW-wU-Eqy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="50" id="qPd-VN-8sD"/>
+                <constraint firstAttribute="bottom" secondItem="fgW-wU-Eqy" secondAttribute="bottom" constant="40" id="tRJ-VW-8fV"/>
+                <constraint firstItem="DiK-em-zXc" firstAttribute="top" secondItem="6bZ-FU-SN6" secondAttribute="bottom" constant="20" id="u2P-A8-7eJ"/>
+                <constraint firstItem="Ioe-MZ-qOh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="vHf-eD-q09"/>
+            </constraints>
+            <point key="canvasLocation" x="54.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2-profile" width="128" height="128"/>
+    </resources>
+</document>

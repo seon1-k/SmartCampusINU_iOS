@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lKr-WT-BOy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="Pl7-US-fAB">
+            <objects>
+                <collectionViewController id="5Mb-52-5Xu" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ZN0-x9-wdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bzm-hH-PJW">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="UMy-Pm-11t">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="5Mb-52-5Xu" id="c12-KE-FzV"/>
+                            <outlet property="delegate" destination="5Mb-52-5Xu" id="9xk-DP-DKQ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPQ-Jl-lhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="431"/>
+        </scene>
+        <!--Time Table View Controller-->
+        <scene sceneID="nOM-hx-wbI">
+            <objects>
+                <viewController storyboardIdentifier="timetableviewcontroller" id="lKr-WT-BOy" customClass="TimeTableViewController" customModule="TimeTableWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Kf-G8-Qd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="emQ-ul-DaS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gEm-x3-sek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrY-qA-R9u" customClass="WeekView" customModule="TimeTableWidget" customModuleProvider="target">
+                                <rect key="frame" x="50" y="0.0" width="325" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="SeM-hb-ZYM"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-ws-Xiq">
+                                <rect key="frame" x="50" y="25" width="325" height="642"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5aM-3y-E5w">
+                                    <size key="itemSize" width="159" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeY-jv-mGB" customClass="TimeView" customModule="TimeTableWidget" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="45" width="50" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="S9q-p7-drb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KJa-ws-Xiq" firstAttribute="top" secondItem="SrY-qA-R9u" secondAttribute="bottom" id="7ts-hV-L6t"/>
+                            <constraint firstItem="SrY-qA-R9u" firstAttribute="leading" secondItem="gEm-x3-sek" secondAttribute="leading" constant="50" id="B09-Sg-Sg5"/>
+                            <constraint firstAttribute="trailing" secondItem="KJa-ws-Xiq" secondAttribute="trailing" id="DK9-JL-heq"/>
+                            <constraint firstItem="SrY-qA-R9u" firstAttribute="top" secondItem="gEm-x3-sek" secondAttribute="top" id="HNX-ES-AS9"/>
+                            <constraint firstAttribute="trailing" secondItem="SrY-qA-R9u" secondAttribute="trailing" id="HfJ-bY-Spm"/>
+                            <constraint firstItem="DeY-jv-mGB" firstAttribute="top" secondItem="7Kf-G8-Qd3" secondAttribute="bottom" constant="25" id="WI9-e6-fmu"/>
+                            <constraint firstItem="DeY-jv-mGB" firstAttribute="leading" secondItem="gEm-x3-sek" secondAttribute="leading" id="ZBe-3e-LHL"/>
+                            <constraint firstItem="emQ-ul-DaS" firstAttribute="top" secondItem="KJa-ws-Xiq" secondAttribute="bottom" id="Zj0-dn-uWL"/>
+                            <constraint firstItem="KJa-ws-Xiq" firstAttribute="leading" secondItem="DeY-jv-mGB" secondAttribute="trailing" id="yE5-lE-HTy"/>
+                            <constraint firstItem="emQ-ul-DaS" firstAttribute="top" secondItem="DeY-jv-mGB" secondAttribute="bottom" id="ylr-ZS-5Zj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="KJa-ws-Xiq" id="dIj-xy-3KW"/>
+                        <outlet property="timeView" destination="DeY-jv-mGB" id="EhJ-T0-EpY"/>
+                        <outlet property="weekView" destination="SrY-qA-R9u" id="wlN-Rd-EiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKv-wv-nv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="430"/>
+        </scene>
+    </scenes>
+</document>

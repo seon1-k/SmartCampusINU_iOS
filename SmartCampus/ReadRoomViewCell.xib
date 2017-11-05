@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="LoD-Li-OL0" customClass="ReadRoomViewCell" customModule="SmartCampus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LoD-Li-OL0" id="7vf-vi-lPx">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="열람실명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xad-6m-bhY">
+                        <rect key="frame" x="10" y="16" width="52" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용률" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYV-R1-btL">
+                        <rect key="frame" x="171" y="15.5" width="39" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-cE-nO9">
+                        <rect key="frame" x="94" y="15.5" width="39" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OOg-04-LP9">
+                        <rect key="frame" x="269" y="8" width="23" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33.5" id="6bK-2D-qxX"/>
+                            <constraint firstAttribute="width" constant="23" id="LRM-D9-jrb"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ibl-cE-nO9" firstAttribute="centerY" secondItem="xad-6m-bhY" secondAttribute="centerY" id="Ejo-Fs-xxC"/>
+                    <constraint firstAttribute="trailing" secondItem="OOg-04-LP9" secondAttribute="trailing" constant="8" id="Ih3-3e-wLS"/>
+                    <constraint firstItem="Ibl-cE-nO9" firstAttribute="leading" secondItem="7vf-vi-lPx" secondAttribute="leadingMargin" constant="86" id="QVg-Ik-4A7"/>
+                    <constraint firstItem="yYV-R1-btL" firstAttribute="centerY" secondItem="Ibl-cE-nO9" secondAttribute="centerY" id="edx-Ox-uK6"/>
+                    <constraint firstItem="yYV-R1-btL" firstAttribute="leading" secondItem="7vf-vi-lPx" secondAttribute="leadingMargin" constant="163" id="eoE-B1-wKu"/>
+                    <constraint firstItem="xad-6m-bhY" firstAttribute="leading" secondItem="7vf-vi-lPx" secondAttribute="leading" constant="10" id="fXu-Nw-vxt"/>
+                    <constraint firstItem="OOg-04-LP9" firstAttribute="centerY" secondItem="7vf-vi-lPx" secondAttribute="centerY" id="fap-po-Shf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OOg-04-LP9" secondAttribute="trailing" id="fu2-Ie-VkL"/>
+                    <constraint firstItem="xad-6m-bhY" firstAttribute="centerY" secondItem="7vf-vi-lPx" secondAttribute="centerY" id="xXx-TH-2AK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nextButton" destination="OOg-04-LP9" id="h59-ws-qOG"/>
+                <outlet property="nextButtonTrailing" destination="Ih3-3e-wLS" id="DS2-h3-iTf"/>
+                <outlet property="rateLabel" destination="yYV-R1-btL" id="Fd6-yH-Who"/>
+                <outlet property="rateLabelLeading" destination="eoE-B1-wKu" id="RXC-SD-Qgd"/>
+                <outlet property="roomLabel" destination="xad-6m-bhY" id="xDi-yx-x6P"/>
+                <outlet property="roomLabelLeading" destination="fXu-Nw-vxt" id="grK-Il-oPM"/>
+                <outlet property="userLabel" destination="Ibl-cE-nO9" id="MiP-T3-bZd"/>
+                <outlet property="userLabelLeading" destination="QVg-Ik-4A7" id="uGw-GH-y6s"/>
+            </connections>
+            <point key="canvasLocation" x="479" y="105"/>
+        </tableViewCell>
+    </objects>
+</document>
